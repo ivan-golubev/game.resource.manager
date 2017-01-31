@@ -1,0 +1,185 @@
+{
+	"variables": [],
+	"info": {
+		"name": "resource-manager",
+		"_postman_id": "84ab019e-8a7d-d034-1e49-d277fc807d61",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UPDATE resource",
+			"request": {
+				"url": "http://localhost:8080/resources/1?game=q3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "c474d92b-0936-47cf-93e0-3ada51d21047",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 100500,\n\t\"name\": \"game data 1\",\n\t\"owner\": \"????\",\n\t\"created\": 1484216018,\n\t\"updated\": 1484216018,\n\t\"groups\": [{\n\t\t\"id\": 1,\n\t\t\"name\": \"A\",\n\t\t\"description\": \"this is group A\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.1\n\t}, {\n\t\t\"id\": 2,\n\t\t\"name\": \"B\",\n\t\t\"description\": \"this is group B\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.7\n\t}, {\n\t\t\"id\": 3,\n\t\t\"name\": \"C\",\n\t\t\"description\": \"this is group C\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.2\n\t}],\n\t\"description\": [{\n\t\t\"en_GB\": \"English Description.\"\n\t}, {\n\t\t\"fr_FR\": \"French Description to appear here.\"\n\t}, {\n\t\t\"en_US\": \"American English Description will be presented here.\"\n\t}],\n\t\"status\": \"offline\",\n\t\"environment\": \"dev\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET resources",
+			"request": {
+				"url": "http://localhost:8080/resources?game=q3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "c474d92b-0936-47cf-93e0-3ada51d21047",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET resource",
+			"request": {
+				"url": "http://localhost:8080/resources/1?game=q3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "c474d92b-0936-47cf-93e0-3ada51d21047",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST a resource",
+			"request": {
+				"url": "http://localhost:8080/resources?game=q3",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=UTF-8",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "c474d92b-0936-47cf-93e0-3ada51d21047",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"game data 1\",\n\t\"owner\": \"????\",\n\t\"created\": 1484216018,\n\t\"updated\": 1484216018,\n\t\"groups\": [{\n\t\t\"id\": 1,\n\t\t\"name\": \"A\",\n\t\t\"description\": \"this is group A\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.1\n\t}, {\n\t\t\"id\": 2,\n\t\t\"name\": \"B\",\n\t\t\"description\": \"this is group B\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.7\n\t}, {\n\t\t\"id\": 3,\n\t\t\"name\": \"C\",\n\t\t\"description\": \"this is group C\",\n\t\t\"url\": \"http://www.futuregamesoflondon.com/hungry-shark-evolution-partners-with-discovery-channel-to-ring-in-shark-week-with-in-game-events/\",\n\t\t\"proportion\": 0.2\n\t}],\n\t\"description\": [{\n\t\t\"en_GB\": \"English Description.\"\n\t}, {\n\t\t\"fr_FR\": \"French Description to appear here.\"\n\t}, {\n\t\t\"en_US\": \"American English Description will be presented here.\"\n\t}],\n\t\"status\": \"online\",\n\t\"environment\": \"dev\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a resource",
+			"request": {
+				"url": "http://localhost:8080/resources/1?game=q3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json; charset=UTF-8",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "//Accept",
+						"value": "application/json; charset=UTF-8",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "x-auth-token",
+						"value": "c474d92b-0936-47cf-93e0-3ada51d21047",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "updates an existing resource"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"url": "http://localhost:8080/auth/logout",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://localhost:8080/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWxpY2U6MDNhMDRhNDctMjY5NC00Mjg5LTlkMmItYjBhYjBiM2FiMzkx",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
